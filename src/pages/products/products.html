@@ -1,0 +1,73 @@
+<!--
+  Generated template for the Products page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+	<ion-navbar>
+		<button ion-button icon-only menuToggle>
+		  <ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Products</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h3>Add Products</h3>
+	<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+	    <ion-item>
+	        <ion-label floating>Subject</ion-label>
+	        <ion-input type="text" formControlName="subject" name="subject"></ion-input>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Message</ion-label>
+	        <ion-textarea type="text" formControlName="message" name="message"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Name</ion-label>
+	        <ion-textarea type="text" formControlName="name" name="name"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Serial No</ion-label>
+	        <ion-textarea type="text" formControlName="serialno" name="serialno"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Purchased Date</ion-label>
+	        <ion-textarea type="text" formControlName="date" name="date"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Purchased from</ion-label>
+	        <ion-textarea type="text" formControlName="party" name="party"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Color</ion-label>
+	        <ion-select>
+				<ion-option value="r">Red</ion-option>
+				<ion-option value="b">Black</ion-option>
+			</ion-select>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Size</ion-label>
+	        <ion-textarea type="text" formControlName="size" name="size"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Price per unit</ion-label>
+	        <ion-textarea type="text" formControlName="priceperunit" name="priceperunit"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Quantity</ion-label>
+	        <ion-textarea type="text" formControlName="quantity" name="quantity"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>mrp per unit</ion-label>
+	        <ion-textarea type="text" formControlName="mrpperunit" name="mrpperunit"></ion-textarea>
+	    </ion-item>
+	    <ion-item>
+	        <ion-label floating>Total Cost Price</ion-label>
+	        <ion-textarea type="text" formControlName="totalcostprice" name="totalcostprice"></ion-textarea>
+	    </ion-item>
+	    <button block><ion-icon name="add"></ion-icon>Add</button>
+	</form>
+</ion-content>
+
